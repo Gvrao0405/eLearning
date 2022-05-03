@@ -1,0 +1,50 @@
+
+<div class="container" style="padding-top: 5%;">
+    <h1>My List of Main Courses</h1>
+    <mat-tab-group>
+        <mat-tab label="First Semester"> Emerging Technologies 
+            Advance system analysis and Design
+             </mat-tab>
+        <mat-tab label="Second Semester"> Managing Network Security and Risk</mat-tab>
+        <mat-tab label="Third Semester">   Design
+            Managing Network Security and Risk</mat-tab>
+      </mat-tab-group>
+<br>
+    <h1>Electives</h1>
+    Electives:  
+<mat-tab-group>   
+     <mat-tab label="First  Semester">  Managing Human Resources</mat-tab>
+     <mat-tab label="Second Semester">  Managing Human Resources</mat-tab>
+     <mat-tab label="Third Semester">  Managing Human Resources</mat-tab>
+
+</mat-tab-group>
+
+
+<br>
+<h1>Add Classes</h1>
+    <mat-form-field>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Course 1</mat-option>
+          <mat-option value="option2">Course  2</mat-option>
+          <mat-option value="option3">Course 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <p>You selected: {{selected}}</p>
+      <button mat-button color="primary" (click)="add()">Add Classes</button>
+      <h1>Drop Classes</h1>
+    <mat-form-field>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Course 1</mat-option>
+          <mat-option value="option2">Course  2</mat-option>
+          <mat-option value="option3">Course 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <p>You selected: {{selected}}</p>
+      <button mat-button color="primary" (click)="del()">Add Classes</button>
+
+
+</div>

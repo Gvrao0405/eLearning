@@ -1,0 +1,19 @@
+<mat-toolbar color="warn" ng-if="access">Home Page
+<section>
+    <div class="example-button-row">
+      <button mat-button color="primary"><a class='nav-link' routerLinkActive='active' [routerLink]="['/my-profile']">My Profile</a>	</button>
+      <button mat-button [matMenuTriggerFor]="menu" color="primary">Courses</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item  > <a class='nav-link' routerLinkActive='active' [routerLink]="['/gettingstarted']">Getting Started</a></button>
+        <button mat-menu-item><a class='nav-link' routerLinkActive='active' [routerLink]="['/courses']">	My Courses</a></button>
+        <button mat-menu-item><a class='nav-link' routerLinkActive='active' [routerLink]="['/tips-practies']">	Tips and Practices</a>	</button>
+        <button mat-menu-item><a class='nav-link' routerLinkActive='active' [routerLink]="['/evaluation']">	Evaluation</a>	</button>
+        </mat-menu>
+      <button mat-button color="primary"><a class='nav-link' routerLinkActive='active' [routerLink]="['/studentforum']">Student forum</a></button>
+      <button mat-button color="primary"><a class='nav-link' routerLinkActive='active' [routerLink]="['/faqs']">FAQs</a></button>
+      <button mat-button color="primary"><a class='nav-link' routerLinkActive='active' [routerLink]="['/help']">Help</a></button>
+
+
+    </div>
+  </section>
+</mat-toolbar>

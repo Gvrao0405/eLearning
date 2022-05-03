@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="styling">
+        
+
+<form class="example-form" >
+    <h3><u style="color:  rgb(79, 5, 81);">Registeration Page:</u></h3>
+    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>User Name</mat-label>
+    <input matInput placeholder="Enter your name" name="usename"
+    [(ngModel)] ="username">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "password">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Enter your password" value="" name="passwordShow"  [(ngModel)]= "passwordShow">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter your email" name="email"
+            [(ngModel)] ="email">
+            </mat-form-field>  
+            <br>
+    
+    <button mat-raised-button  color="primary" (click)="submit()">Register</button>
+    <span *ngIf="show"> <button mat-button color="accent">Registeration success !!</button></span>
+    </form>
+
+
+    </div>
+
+</div>
